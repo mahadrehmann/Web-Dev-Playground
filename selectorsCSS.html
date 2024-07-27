@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing Selectors</title>
+    <style>
+        /* Element Selector : Problem is that all divs get this change*/
+        /* div { */
+            /* background-color:aqua; */
+        /* } */
+
+        /* Class Selector */
+        .test {
+            background-color: blueviolet;
+        }
+
+        /* ID Selector */
+        #var {
+            background-color: cadetblue;
+        }
+
+        /* Child Selector */
+        div>p {
+            color: greenyellow;
+            background-color: cornflowerblue;
+        }
+
+        /* Decesdant selecor : Means any para as loing as in DIV, whether its a span or an article inside a div etc. */
+        div p {
+            color: darkmagenta;
+        }
+
+        /* universal sletor */
+        * {
+            padding: 2px;
+        }
+
+        /* For Visisted Links */
+        a:visited {
+            color: chartreuse;
+        }
+
+        /* For unvisisted Links */
+        a:link {
+            color: crimson;
+        }
+
+        /* When i click the link */
+        a:active {
+            color: dodgerblue;
+            background-color: yellow;
+        }
+
+        a:hover {
+            background-color: darkorange;
+        }
+
+        /* There are many such Psedu-Selectors*/
+    </style>
+</head>
+
+<body>
+
+    <div>
+        This is a Div
+    </div>
+    <br>
+    <div class="test">
+        This is a class div
+    </div>
+    <br>
+    <div id="var">
+        This is a ID div
+    </div>
+
+    <div>
+        <p>This is a para inside a div</p>
+    </div>
+
+    <br>
+    <a href="https://www.youtube.com">Open youtube</a>
+    <br><br>
+    <a href="https://www.github.com">Open Github</a>
+
+</body>
+
+</html>
