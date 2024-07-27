@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts Practice</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap');
+
+        h1 {
+            font-family: 'Times New Roman', Times, serif;
+            /* rgb and a stands for alpha value which is for opacity */
+            color: rgba(0, 0, 0, 0.432);
+        }
+
+        p {
+            /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  /* This first is the font, and if not found the rest are backup fonts*/
+            font-family: "Baskervville SC", serif;
+            font-size: xx-large;
+            /* font-style:italic; */
+            /*  font-weight: 600;           /* Used for bold */
+            /* text-decoration:underline;  /* Used for underline and such */
+
+            /* Basically means line spaceing*/
+            /* line-height: 4;    */
+            /* letter-spacing:2px; */
+
+        }
+
+        h2 {
+            text-transform: capitalize;
+            /* Makes First leters Capital*/
+            text-decoration: underline;
+            text-decoration-color: blueviolet;
+            font-size: xx-large;
+            text-decoration-thickness: 9px;
+            /* If you type tedeth i.e the first 2 digits of each of the phrases, then auto-complete pops up of the full thing */
+
+            /* TO Create distace form left hand side, use indent */
+            text-indent: 45px;
+
+        }
+
+        .overflow {
+            font-size: xx-large;
+            border: 2px solid coral;
+            width: 150px;
+
+            /* This tells us what to do if it exceeds the box */
+            /* text-overflow: clip; */
+
+            /* this means bas fit karo and break a word to next line of no fit */
+            word-break: break-all;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- https://codepen.io/web-dot-dev/pen/yLojraG -->
+    <!-- Use this website to view how fonts look -->
+
+    <h1>Testing fonts</h1>
+    <p>This is a test of the various fonts</p>
+    <p>Wow thats a huge gap</p>
+
+    <h2>random info</h2>
+    <p class="overflow">This Paragraph is in the box</p>
+</body>
+
+</html>
