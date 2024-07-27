@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margins and Paddings</title>
+    <style>
+
+        *{
+            text-align: center;
+        }
+        .box1{
+            margin: 20px;
+            padding: 15px;
+            border:2px solid black;
+            color: blueviolet;
+            background-color: antiquewhite;
+
+            font-size:xx-large;
+            height: 100px;
+            box-sizing: border-box;   /*What this does is that it insures that the sum of text, padding and border is = height or width, or else it would make the text 100px*/
+        }
+
+        /* Margin Collapse: When 2 objects exits on top of each other, the one woht the maximum margin, that will be th emargin b/w these 2 objects */
+
+    </style>
+</head>
+
+<body>
+    <br><br><br><br>
+    
+    <div class="box box1">
+        This is a central div, ok? :)
+    </div>
+
+</body>
+
+</html>
