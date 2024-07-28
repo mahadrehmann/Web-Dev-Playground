@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+:root {
+    --color: rgb(48, 175, 165);
+    --seccolor: black;
+    --defpad: 19px;
+    --defop: 0.9;
+}
+
+.navbar {
+    background-color: var(--color);
+    position: sticky;
+    top: 0px;
+    border: 2px solid black;
+}
+
+ul {
+    display: flex;
+}
+
+ul li {
+    opacity: var(--defop);
+    list-style: none;
+    padding: var(--defpad);
+    font-size: 15px;
+}
+
+ul li:hover {
+    background-color: rgb(199, 197, 114);
+    cursor: pointer;
+}
+
+body {
+    background-color: azure;
+
+}
+
+.screen {
+    display: flex;
+    flex-direction: row;
+}
+
+.box {
+    border: 2px solid black;
+    padding: 20px;
+    margin: 30px;
+    height: 90vh;
+    background-color: rgb(95, 172, 207);
+}
+
+.box:nth-last-child(1) {
+    background-color: rgb(97, 211, 148);
+}
+
+.info {
+    border: 2px solid black;
+    background-color: antiquewhite;
+    border-radius: 30px;
+    height: 30vh;
+    margin: 40px;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.ad {
+    border: 2px solid black;
+    padding: 30px;
+    background-color: orange;
+    border-radius: 96px;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+}
+
+.footer {
+    background-color: var(--color);
+    border: 2px solid black;
+    padding: var(--defpad);
+    font-size: 15px;
+}
