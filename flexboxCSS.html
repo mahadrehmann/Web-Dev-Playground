@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+
+        /* This shows we use flex and justify in the container, not the box */
+        .container{
+            border: 2px solid red;
+            height: 70vh;
+            display: flex;
+            justify-content:space-evenly;
+            align-items: center;
+        }
+        .box{
+            border:2px solid black ;
+            height: 50px;
+            width: 50px;
+            background-color: burlywood;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
